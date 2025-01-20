@@ -1,14 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// import img1 from "../assets/thekeepnotes.png"
+import img1 from '../assets/thekeepnotes2.png';
+import img2 from '../assets/getmaterial.png';
+import img3 from '../assets/picaura.png'
 
 const projects = [
   {
     id: 1,
     title: 'Keep Notes Clone',
     description: 'A Note making website with React . This is a clone of google keep notes . I built it with very clean UI. ',
-    image: "src/assets/thekeepnotes2.png",
+    image: img1,
     tags: ['React', 'Node.js', 'Tailwind css','Javascript','HTML/CSS'],
     link: 'https://thekeepnotes.vercel.app/'
   },
@@ -16,7 +18,7 @@ const projects = [
     id: 2,
     title: 'Get Material ✨',
     description: 'A Notes Sharing website for Nist students . Studetns can upload and get notes contributed by others',
-    image: 'src/assets/getmaterial.png',
+    image: img2,
     tags: ['React', 'API Integration', 'Tailwind CSS','Firebase'],
     link: 'https://getmaterial.vercel.app/'
   },
@@ -24,7 +26,7 @@ const projects = [
     id: 3,
     title: 'Pic Aura',
     description: 'An all in one photo editing tool , where you can edit any image , remove background , add text in the background etc.',
-    image: 'src/assets/picaura.png',
+    image: img3,
     tags: ['React','Tailwind CSS','API','removeBG'],
     link: 'https://picaura.vercel.app/'
   }
@@ -38,7 +40,7 @@ const ProjectCard = ({ project }) => (
     className="bg-white rounded-lg shadow-lg overflow-hidden"
   >
     <img src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-fit object-cover" />
-    <div className="p-6">
+    <div className="px-6 py-2">
       <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
       <p className="text-gray-600 mb-4">{project.description}</p>
       <div className="flex flex-wrap gap-2 mb-4">
@@ -62,13 +64,13 @@ const ProjectCard = ({ project }) => (
 
 const ProjectsPage = () => {
   return (
-    <div className="min-h-screen bg-orange-50 py-12 px-4 pt-32 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-orange-50 pb-0 px-4 pt-24 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-12"
+          className="text-4xl font-bold text-center mb-8"
         >
           My Projects
         </motion.h1>

@@ -100,7 +100,7 @@ const AboutPage = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }} className="text-xl text-gray-600">
-            Engineering student and web developer passionate about creating modern,
+            Hi i am Talagana Rajesh , an Engineering student and web developer passionate about creating modern,
             user-friendly applications.
           </motion.h1>
         </div>
@@ -185,14 +185,14 @@ const AboutPage = () => {
             <div>
               <h2 className="text-2xl font-semibold mb-4">Connect With Me</h2>
               <div className="flex space-x-4">
-                <a href='https://github.com/talaganaRajesh' className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
+                <a href='https://github.com/talaganaRajesh' target='_blank' className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
                   <Github className="w-6 h-6" />
                 </a>
 
-                <a href='https://www.linkedin.com/in/talagana-rajesh-75a546289/' className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
+                <a href='https://www.linkedin.com/in/talagana-rajesh-75a546289/' target='_blank' className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
                   <Linkedin className="w-6 h-6" />
                 </a>
-                <a href="mailto:talaganarajesh@gmail.com" className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
+                <a href="mailto:talaganarajesh@gmail.com" target='_blank' className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
                   <Mail className="w-6 h-6" />
                 </a>
               </div>
@@ -204,10 +204,12 @@ const AboutPage = () => {
         <div className="border-t pt-12">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xl font-medium">Interested in working together?</p>
+            <a href="/projects">
             <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
               View My Work
               <ExternalLink className="w-4 h-4" />
             </button>
+            </a>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const ResumePage = () => {
           id: 1,
           title: "Frontend Developer",
           company: "GetMaterial",
-          period: "Jun 2024 - Present",
+          period: "Dec 2024 - Present",
           responsibilities: [
             "Developed a notes-sharing platform for students using React and Tailwind CSS",
             "Implemented responsive and user-friendly UI to enhance the student experience",
@@ -19,7 +19,7 @@ const ResumePage = () => {
           id: 2,
           title: "Web Developer Intern",
           company: "Freelance Projects",
-          period: "Jan 2024 - May 2024",
+          period: "Jan 2024 - Feb 2024",
           responsibilities: [
             "Designed and deployed a photography portfolio website using React",
             "Collaborated with clients to understand requirements and deliver tailor-made solutions",
@@ -43,28 +43,27 @@ const ResumePage = () => {
         {
           id: 1,
           degree: "Bachelor of Technology in Computer Science and Engineering",
-          institution: "NIST College, Berhampur",
-          year: "2021 - Present",
+          institution: "NIST University, Berhampur",
+          year: "2022 - Present",
           achievements: [
             "Developed multiple live web projects such as GetMaterial and PicAura",
             "Participated in Smart India Hackathon 2024 with a focus on agricultural innovations",
-            "Consistently ranked among the top 5 students in coding competitions",
+            "Consistently ranked among the top 5 students in Academics",
           ],
         },
       ];
     
       const skills = [
         "React",
-        "Next.js",
         "JavaScript (ES6+)",
         "HTML5",
         "CSS3",
         "Tailwind CSS",
         "Node.js",
         "MongoDB",
-        "RESTful APIs",
         "Git",
         "Python",
+        "java",
         "AI/ML Basics",
       ];
 

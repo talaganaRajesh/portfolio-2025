@@ -56,7 +56,7 @@ function HomePage() {
             </motion.h1>
 
             <div className='flex flex-row gap-4 items-center ml-48 mt-11 z-50'>
-              <a href="https://www.linkedin.com/in/talagana-rajesh-75a546289/">
+              <a href="mailto:talaganarajesh@gmail.com">
                 <RainbowButton className="transition-all hover:rounded-2xl">
                 <ShinyButton className=' text-white  px-4 py-1'>
                   Hire Me
