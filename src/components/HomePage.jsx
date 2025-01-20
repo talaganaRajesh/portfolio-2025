@@ -85,7 +85,12 @@ function HomePage() {
         {/*right*/}
 
         <div>
-          <img src={myphoto} alt="" className='size-96 border-b-4 border-green-900 rounded-full' />
+          <motion.img
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          
+          src={myphoto} alt="" className='size-96 border-b-4 border-green-900 rounded-full' />
         </div>
       </div>
     </div>
