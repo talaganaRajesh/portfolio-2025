@@ -75,13 +75,13 @@ const ResumePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 pt-20 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-orange-50 pt-20 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white shadow-lg rounded-lg overflow-hidden"
+          className="bg-orange-50 shadow-lg rounded-lg overflow-hidden"
         >
           <div className="p-8">
             <div className="flex justify-between items-start mb-6">
@@ -90,7 +90,7 @@ const ResumePage = () => {
                 <p className="text-xl text-gray-600">Frontend Developer</p>
               </div>
               <motion.a
-                href="/path-to-your-resume.pdf"
+                href="src/assets/my resume for internship Dec 2024.pdf"
                 download
                 className="flex items-center px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
                 whileHover={{ scale: 1.05 }}
