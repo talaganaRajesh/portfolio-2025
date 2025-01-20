@@ -74,7 +74,7 @@ const ResumePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-orange-50 pt-20 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-orange-50 md:pt-20 pt-0 pb-20 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -82,21 +82,21 @@ const ResumePage = () => {
           transition={{ duration: 0.5 }}
           className="bg-orange-50 shadow-lg rounded-lg overflow-hidden"
         >
-          <div className="p-8">
+          <div className="md:p-8 p-4">
             <div className="flex justify-between items-start mb-6">
               <div>
-                <h1 className="text-3xl font-bold text-gray-800">T Rajesh</h1>
-                <p className="text-xl text-gray-600">Frontend Developer</p>
+                <h1 className="md:text-3xl text-xl font-bold text-gray-800">T Rajesh</h1>
+                <p className="md:text-xl text-base text-gray-600">Frontend Developer</p>
               </div>
               <motion.a
                 href="src/assets/my resume for internship Dec 2024.pdf"
                 download
-                className="flex items-center px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
+                className="flex items-center px-3 md:px-4 text-xs md:text-lg py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Download size={18} className="mr-2" />
-                Download CV
+                <Download size={18} className="mr-2 hidden md:inline" />
+                Download <span className="md:inline hidden md:ml-2">CV</span>
               </motion.a>
             </div>
 

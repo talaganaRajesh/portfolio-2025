@@ -87,7 +87,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-orange-50 z-50 p-8 pt-32">
+    <div className="min-h-screen bg-orange-50 z-50 p-8 pb-28 md:pb-8 md:pt-32">
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Hero Section */}
         <div className="space-y-6">
@@ -106,7 +106,7 @@ const AboutPage = () => {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12  ">
           {/* Left Column */}
           <div className="space-y-6">
             <div>
@@ -161,7 +161,7 @@ const AboutPage = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-semibold mb-6">Skills</h2>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2 md:gap-4">
                 {skills.map((skill, index) => (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -176,7 +176,7 @@ const AboutPage = () => {
                       transition={{ duration: 0.5 }} className="p-2 bg-white rounded-md shadow-sm">
                       {skill.icon}
                     </motion.div>
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="text-xs md:text-base font-semibold">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
@@ -201,7 +201,7 @@ const AboutPage = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="border-t pt-12">
+        <div className="border-t pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xl font-medium">Interested in working together?</p>
             <a href="/projects">
