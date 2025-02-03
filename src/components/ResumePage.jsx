@@ -2,6 +2,8 @@ import React from "react"
 import { motion } from "framer-motion"
 import { Download } from "lucide-react"
 
+import cv from "../assets/my resume for internship Dec 2024.pdf"
+
 const ResumePage = () => {
     const experiences = [
         {
@@ -77,7 +79,7 @@ const ResumePage = () => {
     <div className="min-h-screen bg-orange-50 md:pt-20 pt-0 pb-20 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -20 }}  
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="bg-orange-50 shadow-lg rounded-lg overflow-hidden"
@@ -89,7 +91,7 @@ const ResumePage = () => {
                 <p className="md:text-xl text-base text-gray-600">Frontend Developer</p>
               </div>
               <motion.a
-                href="src/assets/my resume for internship Dec 2024.pdf"
+                href={cv}
                 download
                 className="flex items-center px-3 md:px-4 text-xs md:text-lg py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
                 whileHover={{ scale: 1.05 }}
