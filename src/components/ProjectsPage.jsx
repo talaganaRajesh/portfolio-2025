@@ -4,15 +4,16 @@ import { motion } from 'framer-motion';
 import img1 from '../assets/thekeepnotes2.png';
 import img2 from '../assets/getmaterial.png';
 import img3 from '../assets/picaura.png'
+import img4 from '../assets/lemonstudio.png'
 
 const projects = [
   {
     id: 1,
-    title: 'Keep Notes Clone',
-    description: 'A Note making website with React . This is a clone of google keep notes . I built it with very clean UI. ',
-    image: img1,
-    tags: ['React', 'Node.js', 'Tailwind css','Javascript','HTML/CSS'],
-    link: 'https://thekeepnotes.vercel.app/'
+    title: 'Lemon Studio',
+    description: 'A photography website for my client who owns a photgraphy studio in dubai . Where i showcased his work and services.',
+    image: img4,
+    tags: ['React','Tailwind CSS','API Integration'],
+    link: 'https://lemonstudio.vercel.app/'
   },
   {
     id: 2,
@@ -29,7 +30,16 @@ const projects = [
     image: img3,
     tags: ['React','Tailwind CSS','API','removeBG'],
     link: 'https://picaura.vercel.app/'
+  },
+  {
+    id: 4,
+    title: 'Keep Notes Clone',
+    description: 'A Note making website with React . This is a clone of google keep notes . I built it with very clean UI. ',
+    image: img1,
+    tags: ['React', 'Node.js', 'Tailwind css','Javascript','HTML/CSS'],
+    link: 'https://thekeepnotes.vercel.app/'
   }
+  
 ];
 
 const ProjectCard = ({ project }) => (
