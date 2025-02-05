@@ -88,7 +88,7 @@ const ResumePage = () => {
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h1 className="md:text-3xl text-xl font-bold text-gray-800">T Rajesh</h1>
-                <p className="md:text-xl text-base text-gray-600">Frontend Developer</p>
+                <p className="md:text-xl text-base text-gray-600">Full stack Developer</p>
               </div>
               <motion.a
                 href={cv}
