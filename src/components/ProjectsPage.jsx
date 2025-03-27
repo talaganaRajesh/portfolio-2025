@@ -5,6 +5,7 @@ import img1 from '../assets/thekeepnotes2.png';
 import img2 from '../assets/getmaterial.png';
 import img3 from '../assets/picaura.png'
 import img4 from '../assets/lemonstudio.png'
+import img5 from '../assets/openroom-image.png';
 
 const projects = [
   {
@@ -23,8 +24,16 @@ const projects = [
     tags: ['React', 'API Integration', 'Tailwind CSS','Firebase'],
     link: 'https://getmaterial.vercel.app/'
   },
-  { 
+  {
     id: 3,
+    title: 'Open Room',
+    description: 'Chat anonymously with real-time messaging, AI replies, threading, and safe moderation. Stay connected, stay private! 🚀',
+    image: img5,
+    tags: ['React','Node js','API','Firebase','cloud flare'],
+    link: 'https://oroom.vercel.app/'
+  },
+  { 
+    id: 4,
     title: 'Pic Aura',
     description: 'An all in one photo editing tool , where you can edit any image , remove background , add text in the background etc.',
     image: img3,
@@ -32,7 +41,7 @@ const projects = [
     link: 'https://picaura.vercel.app/'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Keep Notes Clone',
     description: 'A Note making website with React . This is a clone of google keep notes . I built it with very clean UI. ',
     image: img1,
